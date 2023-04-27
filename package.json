@@ -1,0 +1,24 @@
+{
+  "name": "drive-moto",
+  "version": "1.0.0",
+  "description": "layout using gulp and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "start "
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "html"
+  ],
+  "author": "Pasha Zubkov <pal5555@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.62.1"
+  }
+}
