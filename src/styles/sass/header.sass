@@ -1,3 +1,76 @@
-.header
-    color: 'blue'
+@import './fonts'
+@import './common'    
+@import './variables'
     
+.header__top 
+    @include font( 'SFProDisplay' ,20px, 700, lowercase, center, $header_top_color )
+    @include displayElements( flex, space-between , center,)
+    margin-top: 25px
+
+
+.navigation__items
+     @include displayElements( flex, flex-start , center,)
+
+
+.navigation__item
+    margin-left: 50px 
+    list-style: none
+    &:hover
+        cursor: pointer
+
+.navigation__item--margin
+    margin-left: 0
+    
+.header__logo 
+    flex-direction: column
+   
+.logo__text
+      @include font( 'Staatliches',20px, 400,  uppercase , center, $header_top_color )   
+      margin-top: 8.84px
+      line-height: 25px
+
+
+.header__lacation
+      @include font( 'SFProDisplay' ,20px,  700, lowercase, center, $header_top_color )
+      @include displayElements( flex, flex-start , center,)
+  
+.location 
+    position: relative
+
+.location__pointer
+    position: absolute  
+    bottom: 0
+    left: -27px
+    
+.header__user 
+    @include displayElements( flex, flex-start , center,)
+
+    &div
+        margin-left: 10px
+    
+    
+.user__favorites
+    &:hover
+        cursor: pointer 
+
+.user__profile 
+     &:hover
+        cursor: pointer 
+
+.user__cart 
+     &:hover
+        cursor: pointer 
+
+
+
+
+
+
+
+    
+
+        
+        
+
+
+
