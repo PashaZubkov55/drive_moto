@@ -1,0 +1,55 @@
+@import './fonts'
+@import './common'    
+@import './variables'
+
+.stocks__wrapper
+    @include displayElements( flex ,space-between , start)
+    margin-top: 81px
+
+
+
+
+.slider__item 
+    position: relative
+
+
+.slider__trigers
+    position: absolute
+    display: flex
+    bottom: 40px
+    left: 50%
+    transform: translate(-50%)
+    
+.trigers__item--active
+    margin-left: 0
+    background-color:#fff    
+
+
+.trigers_item
+    margin-left: 9px
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    border: 1px solid #fff
+    &:hover
+        cursor: pointer
+   
+
+    
+.slider__arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    &:hover
+        cursor: pointer
+
+.slider__arrow--left
+    left: 23px
+
+.slider__arrow--right 
+    right: 14.87px
+
+
+
+
+
