@@ -77,17 +77,35 @@
      @include font( 'Barlow' ,27px, 700, uppercase, center, #1C62CD )
 
 
-.saleHeder__currency
-    position: relative
-    &::before
-        @include lineBefore(8.48px, 2px, #1C62CD, 7.5px, 2px)
-    &::after
-        @include lineafter(8.48px, 2px, #1C62CD, 12px,none )
      
 
-  
+.sale_img
+    text-align: center
+     
             
       
 
+
+.saleHeader__oldPrice
+    text-align: right 
+    position: relative
+    @include font( 'Barlow' ,14px, 400, lowercase, none, #C4C4C4 )
+
+
+
+.saleHeader__oldPrice
+    &::before
+        content: ' '
+        position: absolute
+        content: ' '
+        width: 80px
+        height: 0.5px
+        background-color: #C4C4C4
+        transform: rotate(-5.33deg)
+        top: 8px
+    
+       
+
+       
 
 
