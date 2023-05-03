@@ -11,14 +11,13 @@
 
 .slider__row
     position: relative
-    width: 100%
-    height: 100%
+     width: 100px
+    overflow: hidden
 
 
 .slider__item 
-    max-width: 100%
-    height: 100%
-
+    width:100%
+    height:100%
     
 
 
@@ -57,11 +56,38 @@
 
 .slider__arrow--left
     left: 23px
-
 .slider__arrow--right 
     right: 14.87px
 
 
+
+.sale__header
+     @include displayElements( flex ,space-between , start)
+        
+.saleHeader_text--stocks
+     @include font( 'ProximaNova' ,12px, bold, uppercase, center, #fff )
+     padding: 8px 19.31px 8.8px 20px
+     background-color: #1C62CD
+     line-height: 15px
+     letter-spacing: 0.1em
+
+
+.saleHeader__price
+
+     @include font( 'Barlow' ,27px, 700, uppercase, center, #1C62CD )
+
+
+.saleHeder__currency
+    position: relative
+    &::before
+        @include lineBefore(8.48px, 2px, #1C62CD, 7.5px, 2px)
+    &::after
+        @include lineafter(8.48px, 2px, #1C62CD, 12px,none )
+     
+
+  
+            
+      
 
 
 

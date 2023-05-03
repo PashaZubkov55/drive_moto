@@ -28,5 +28,24 @@ a
     align-items: $al
 
 
+@mixin lineBefore($width, $height ,$bgColor, $vertical, $horizont)
+
+    content: ''
+    position: absolute
+    width: $width 
+    height: $height
+    background-color: $bgColor 
+    bottom: $vertical
+    left: $horizont
+   
+
+@mixin lineafter($width, $height ,$bgColor, $vertical, $horizont)
+     content: ''
+     position: absolute
+     width: $width 
+     height: $height
+     background-color: $bgColor 
+     bottom: $vertical
+     left: $horizont
 
 
