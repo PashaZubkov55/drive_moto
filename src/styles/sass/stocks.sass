@@ -60,9 +60,16 @@
     right: 14.87px
 
 
+.sale__wrapper
+    border-radius: 3px
+    border: 1px solid #CDCDCD
+   
 
 .sale__header
      @include displayElements( flex ,space-between , start)
+     padding-right: 4px
+
+
         
 .saleHeader_text--stocks
      @include font( 'ProximaNova' ,12px, bold, uppercase, center, #fff )
@@ -73,14 +80,15 @@
 
 
 .saleHeader__price
-
      @include font( 'Barlow' ,27px, 700, uppercase, center, #1C62CD )
 
 
      
 
-.sale_img
+.sale__img
     text-align: center
+    margin-top: 36px
+
      
             
       
@@ -89,22 +97,55 @@
 .saleHeader__oldPrice
     text-align: right 
     position: relative
+    margin-top: 7px
+    display: flex
+    justify-content: flex-end
+    line-height: 17px
     @include font( 'Barlow' ,14px, 400, lowercase, none, #C4C4C4 )
 
-
+.oldPrice__text
+    margin-top: 3px
+       
+.oldPrice__img
+    margin-left: 3.93px
+    padding-right: 4px
+    margin-top: 2px
 
 .saleHeader__oldPrice
     &::before
         content: ' '
         position: absolute
         content: ' '
-        width: 80px
+        width: 60px
         height: 0.5px
         background-color: #C4C4C4
         transform: rotate(-5.33deg)
         top: 8px
-    
+        right:4px
+
+.sale__title
+    @include font( 'SFProDisplay',18px, 700, none, center, $header_top_color )
+    margin-top: 4.31px
+
        
+.sale__top
+    margin-top: 7px
+    background-color:  #F0F0F4
+    padding: 41px 36px 48px 40px
+   
+     
+    
+
+.sale__description 
+     @include font( 'SFProDisplay',21px, 400, none, center, $header_top_color )
+     
+
+
+.sale__date 
+    @include font( 'Barlow',18px, 700, none, center, #1C62CD )
+    line-height: 22px
+
+
 
        
 
