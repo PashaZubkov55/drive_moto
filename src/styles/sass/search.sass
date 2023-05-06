@@ -9,10 +9,53 @@
 
 
 .navigation__items-filters
-    @include font( 'SFProDisplay' ,20px, 400, lowercase, center, $header_top_color )
+    @include font( 'SFProDisplay' ,20px, 400, none, center, $header_top_color )
 
 .navigation__item-filterActiv
     background-color: #F0F0F4
     padding: 11px 26px 12px 26px
     font-weight: 700
     border-radius: 5px
+
+
+.search__succes
+    position: relative
+    top: 37px
+ 
+
+
+.search__input
+    position: absolute
+    width: 1170px
+    padding: 15px 0px 15px 20px    
+    background-color: #F0F0F4
+    border: none
+    left: 0
+    border-radius: 3px
+    @include font( 'SFProDisplay' ,16px, 700, none, left, #656464 )
+
+   
+
+
+.search__button
+        position: absolute
+        @include font( 'SFProDisplay' ,14px, 400, none, center, #fff )
+        padding: 17px 38px 16px 40px
+        background-color: #1C62CD
+        border: none
+        border-radius: 3px
+        right: -18px
+        line-height: 17px
+        letter-spacing: 0.12em
+        z-index: 2
+       
+.search__button
+    &:hover
+        cursor: pointer      
+        
+        
+
+  
+
+
+
