@@ -2,27 +2,52 @@
 @import './common'    
 @import './variables'
 
+.main__categories
+    margin-top: 80px
+
 .categories__wrapper
-     @include displayElements( flex, space-between , center,)
+     @include displayElements( flex, space-between , none)
 
 .categories__item
-    padding: 20px 37px 14px 20px
-    background: #FFFFFF
+    position: relative
+    @include displayElements( flex, space-between , flex-star)
+    @include font( 'Barlow' ,28px, 700, none, left, #2F3035 ) 
     border: 1px solid #CDCDCD
     border-radius: 3px
+    padding: 20px 37.79px 14px 20px
+    margin-left: 30px
+    flex-basis: 370px
 
-.categories__title
-      @include font( 'Barlow' ,23px, 700, none, left, $header_top_color )
-      line-height: 28px
+    &:hover
+        cursor: pointer
+
+.categories__item-active
+    color: #1C62CD     
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25)
+
+.categories__wrapper-bottom
+    margin-top: 30px
+
+
+.categories__title 
+    
+    line-height: 28px
+
 
 .categories__link
-
-    bottom: 1px
-
+    position: absolute 
+    bottom: 14px
+    left: 20px 
     a
-         @include font( 'SFProDisplay' ,14px, 400, none, left, $header_top_color )
-         color: #C4C4C4
-         line-height: 17px
+        @include font( 'Barlow' ,14px, 400, none, center, #C4C4C4 ) 
+        &:hover
+            cursor: pointer 
 
-    .categories__arrow
-        margin-left: 3px
+
+
+.categories__item-padding
+    padding-right: 24px   
+
+   
+
+     
