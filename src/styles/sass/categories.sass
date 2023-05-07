@@ -1,0 +1,28 @@
+@import './fonts'
+@import './common'    
+@import './variables'
+
+.categories__wrapper
+     @include displayElements( flex, space-between , center,)
+
+.categories__item
+    padding: 20px 37px 14px 20px
+    background: #FFFFFF
+    border: 1px solid #CDCDCD
+    border-radius: 3px
+
+.categories__title
+      @include font( 'Barlow' ,23px, 700, none, left, $header_top_color )
+      line-height: 28px
+
+.categories__link
+
+    bottom: 1px
+
+    a
+         @include font( 'SFProDisplay' ,14px, 400, none, left, $header_top_color )
+         color: #C4C4C4
+         line-height: 17px
+
+    .categories__arrow
+        margin-left: 3px

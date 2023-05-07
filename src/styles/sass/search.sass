@@ -5,7 +5,8 @@
 
 
 .search__filters
-    margin-top: 80px
+    margin: 80px 0
+    
 
 
 .navigation__items-filters
@@ -18,43 +19,35 @@
     border-radius: 5px
 
 
-.search__succes
+        
+.search__form
     position: relative
-    top: 37px
- 
-
-
-.search__input
-    position: absolute
-    width: 1170px
-    padding: 15px 0px 15px 20px    
-    background-color: #F0F0F4
-    border: none
-    left: 0
-    border-radius: 3px
-    @include font( 'SFProDisplay' ,16px, 700, none, left, #656464 )
-
-   
-
-
-.search__button
-        position: absolute
-        @include font( 'SFProDisplay' ,14px, 400, none, center, #fff )
-        padding: 17px 38px 16px 40px
-        background-color: #1C62CD
+  
+    input
+        width: 1170px
+        padding-left: 20px
+        padding-top: 15px
+        padding-bottom: 15px
+        @include font( 'SFProDisplay' ,16px, 400, none, left, #656464)
+        background-color: #F0F0F4
         border: none
         border-radius: 3px
+    
+    button
+        position: absolute
         right: -18px
-        line-height: 17px
+        top: 0   
+        @include font( 'SFProDisplay' ,14px, 700, center, left, #FFF)
         letter-spacing: 0.12em
-        z-index: 2
-       
-.search__button
-    &:hover
-        cursor: pointer      
-        
-        
+        text-transform: uppercase
+        background: #1C62CD
+        padding: 17px 38px 16px 40px
+        border-radius: 3px
 
+      
+ 
+
+    
   
 
 
