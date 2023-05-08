@@ -1,0 +1,106 @@
+@import './fonts'
+@import './common'    
+@import './variables'
+
+.main__popular 
+    margin-top: 80px
+
+
+.title__text
+     @include font( 'Barlow' ,25px, 700, none, left, #2F3035 ) 
+     line-height: 30px
+
+
+
+.product__cart 
+    position: absolute
+    bottom: 0px
+    right: 0
+    padding: 10px 16px 7.5px 14px
+    background-color: #1C62CD
+    border-radius: 10px 0px 0px 0px
+
+
+
+
+
+        
+.product 
+    border: 1px solid #CDCDCD
+    border-radius: 3px
+    text-align: center
+    position: relative
+    padding: 16px 19px 31px 40px
+    margin-left: 30px
+
+    div
+        margin-top: 14px
+        
+
+
+
+
+
+.product__title 
+     @include font( 'SFProDisplay' ,18px, 400, none, center, #2F3035 ) 
+     line-height: 21.48px
+
+.product__prise
+      @include font( 'Barlow' ,30px, 700, none, center, #2F3035 ) 
+
+
+
+.product
+    
+    :hover:after
+        position: absolute
+        content: 'посмотреть товар'
+        cursor: pointer
+        top: 40%
+        left: 40%
+        transform: translate(-40%,-40%)
+        width: 230px
+        height: 51px
+        background-color: #FFFFFF
+        opacity: 0.9
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+        border-radius: 3px
+        padding-top: 18px
+        @include font( 'SFProDisplay' ,20px, 400, none, center, #2F3035 ) 
+        
+
+.product__cart:hover:after
+    content: none
+
+.product__cart:hover
+    cursor: pointer
+
+.product__sale
+    position: absolute
+    top: -15px
+    left: 0
+    width: 63px
+    height: 25px
+    padding-top: 6px
+    background-color: #1C62CD
+    @include font( 'SFProDisplay' ,12px, 400, uppercase, center, #fff ) 
+    line-height: 14.32px
+
+
+.product__sale:hover:after
+    content: none
+
+
+.product__favorit 
+    position: absolute
+    right: 19px
+    top: 16px
+
+.product__favorit:hover:after
+    content: none
+
+.product__favorit:hover
+    cursor: pointer
+
+.product__prise-noPrise
+     @include font( 'SFProDisplay' ,18px, 700, none, center, #2F3035 ) 
