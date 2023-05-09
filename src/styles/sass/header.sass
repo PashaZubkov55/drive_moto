@@ -1,7 +1,8 @@
 @import './fonts'
 @import './common'    
 @import './variables'
-    
+
+     
 .header__top 
     @include font( 'SFProDisplay' ,20px, 700, lowercase, center, $header_top_color )
     @include displayElements( flex, space-between , center,)
@@ -68,7 +69,8 @@
 .menu
       background-color: #F0F0F4
       
-
+.menu-products
+    background-color:#fff 
 
 .menu__items
     padding: 15px 0 14px 0
@@ -89,13 +91,15 @@
     border-bottom: 3px solid #1C62CD
 
 
-
-
+.menu__items-products
+    @include displayElements( flex, flex-start , center,)
+    
 
 
 
     
-
+  
+    
         
         
 

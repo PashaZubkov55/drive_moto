@@ -26,12 +26,16 @@
 
         
 .product 
-    border: 1px solid #CDCDCD
+    
     border-radius: 3px
     text-align: center
     position: relative
     padding: 16px 19px 31px 40px
     margin-left: 30px
+    @include font( 'SFProDisplay' ,18px, 400, none, center, #2F3035 ) 
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25)
+    border-radius: 3px
+     
 
     div
         margin-top: 14px
@@ -42,11 +46,10 @@
 
 
 .product__title 
-     @include font( 'SFProDisplay' ,18px, 400, none, center, #2F3035 ) 
-     line-height: 21.48px
-
+    
+     line-height: 21.48px 
 .product__prise
-      @include font( 'Barlow' ,30px, 700, none, center, #2F3035 ) 
+      @include font( 'Barlow' ,30px, 700, none, center,none) 
 
 
 
@@ -67,7 +70,10 @@
         border-radius: 3px
         padding-top: 18px
         @include font( 'SFProDisplay' ,20px, 400, none, center, #2F3035 ) 
-        
+
+
+
+
 
 .product__cart:hover:after
     content: none
@@ -103,4 +109,34 @@
     cursor: pointer
 
 .product__prise-noPrise
-     @include font( 'SFProDisplay' ,18px, 700, none, center, #2F3035 ) 
+     @include font( 'SFProDisplay' ,18px, 700, none, center, none ) 
+
+
+.product:hover
+
+    color:#1C62CD
+    cursor: pointer
+
+.mein__menu-products
+    margin-top: 25px
+    
+.menu__items-products li
+    margin-left: 50px
+
+.menu__items-products li:nth-child(1)
+    margin-left: 0px
+
+.main__more
+    margin-top: 35px
+    @include displayElements( flex, center, center,)
+    button
+        @include font( 'SFProDisplay' ,15px, 400, uppercase, center, #2F3035 ) 
+        padding: 17px 43px 15px 43px
+        background-color: #F0F0F4
+        letter-spacing: 0.12em
+        line-height: 18px
+        text-align: center 
+        border: none
+    
+    button:hover
+        cursor: pointer       
