@@ -7,19 +7,21 @@
  
 
 .footer__wrapper 
-    @include displayElements( flex, space-arount , center,)
+    @include displayElements( flex, space-between, center)
     margin-top: 98px
     padding-top: 42px 
 
 
-.footer__subscription 
-    margin-top: 34px
+.footer__subscription
+    margin-top: 14px
    
 
 .form .form__input-subscription
     margin-top: 34px
     width: 201px
-    
+    padding-top: 8px
+    padding-bottom: 10px
+    padding-left: 12px
     @include font( 'SFProDisplay' ,14px, 400, none, left, #2F3035 )  
        
 
@@ -34,7 +36,22 @@
       
      right: -70px
      top: 33px
-     padding: 16px 16px
+     padding: 10px 16px
 
-     
+     .footer__menu
+        margin-top: 20px
        
+.menu__title
+     @include font( 'SFProDisplay' ,14px, 700, none,left, #2F3035 )
+
+
+.footer__contacts
+      @include displayElements( flex, flex-start, center)
+   
+
+.footer__menu
+    margin-top: 20px
+
+.footer__icon
+    margin-left: 50px
+
