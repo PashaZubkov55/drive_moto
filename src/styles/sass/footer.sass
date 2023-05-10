@@ -6,11 +6,11 @@
     background-color: #F0F0F4
  
 
-.footer__wrapper 
+.footer__info 
     @include displayElements( flex, space-between, center)
     margin-top: 98px
-    padding-top: 42px 
-
+    padding-top: 42px
+    padding-bottom: 27px 
 
 .footer__subscription
     margin-top: 14px
@@ -22,7 +22,8 @@
     padding-top: 8px
     padding-bottom: 10px
     padding-left: 12px
-    @include font( 'SFProDisplay' ,14px, 400, none, left, #2F3035 )  
+    @include font( 'SFProDisplay' ,14px, 400, none, left, #2F3035 )
+    background-color: #fff  
        
 
 .subscription__text
@@ -54,4 +55,21 @@
 
 .footer__icon
     margin-left: 50px
+    :hover
+        cursor: pointer
 
+
+.footer__conditionality
+    @include displayElements( flex, center, center)
+    margin-top: 46px
+    
+.conditionality__text
+    @include font( 'SFProDisplay' ,14px, 400, lowercase,left, #48494D )
+    padding-bottom: 27px
+    text-align: center
+
+.conditionality__text:nth-child(1)
+    margin-right: 100px
+
+.conditionality__text:nth-child(2)
+    margin-right: 20px    
