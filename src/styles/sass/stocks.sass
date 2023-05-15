@@ -2,7 +2,7 @@
 @import './common'    
 @import './variables'
 
-.stocks__wrapper
+.stocks__wrapper    
     @include displayElements( flex ,space-between , start)
     margin-top: 81px
 
@@ -19,6 +19,7 @@
     margin-top: 35px
     padding-right: 50px
     padding-bottom: 5px
+    padding-top: 10px
 
 
     
@@ -158,8 +159,61 @@
     @include font( 'Barlow',18px, 700, none, center, #1C62CD )
     line-height: 22px
 
+.slider__trigers-products
+    display: flex
+@media (max-width: 1192px)
+    .slider
+        width: 890
+        margin: 0 20px
+    .slider__row-mobile img    
+        width: 800px
+    .slider-products
+        width: 1000px
+        margin-top: 35px
+        padding-right: 50px
+        padding-bottom: 5px
 
+@media (max-width: 992px)
+    .slider
+        width: 500px
+        margin: 0 20px
+    .slider__row-mobile img    
+        width: 500px
+    .slider-products
+        width: 260px
+        margin: 35px auto
+        padding-right: 50px
+        padding-bottom: 30px  
+    
+    .slider__trigers-products
+        display: flex
+        bottom: 0
+    .trigers__item--activeProducts
+        background-color: #1C62CD
+
+    .trigers_item-products
+        background-color: #C4C4C4    
+     
+    
+    .slider__arrow
+        display: none    
+    
+    .stocks__wrapper    
+        @include displayElements( flex ,center , center)
+        margin-top: 81px
+        flex-direction: column
+        
+    .sale__wrapper
+        margin-top: 40px
+        width: 500px
 
        
 
+@media (max-width: 576px)
+    .sale__wrapper
+         width: 365px
+   
+
+         
+   
 
