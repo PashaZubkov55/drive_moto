@@ -51,7 +51,10 @@ button:hover
      bottom: $vertical
      left: $horizont
 
-
+@media (max-width: 992px)
+    .container
+        max-width: 900px
+        margin: 0 auto
 @media (max-width: 1192px)
     .container
         max-width: 1140px
@@ -60,4 +63,9 @@ button:hover
 @media (max-width: 576px)
      .container
         max-width: 500px
-        margin: 0 30px
+        margin: 0 10px
+        overflow: hidden
+
+@media (max-width: 450px)
+    .container
+        max-width: 450px

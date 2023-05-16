@@ -7,6 +7,7 @@
 
 .categories__wrapper
      @include displayElements( flex, space-between , none)
+    
 
 .categories__wrapper div:nth-child(1)
     margin-left: 0
@@ -51,6 +52,14 @@
 .categories__item-padding
     padding-right: 24px   
 
-   
+@media (max-width: 1192px)
+    .categories__wrapper
+        flex-wrap: wrap
 
-     
+@media (max-width: 990px)
+    .categories__wrapper
+        align-items: center
+        justify-content: center
+    .categories__item    
+        margin-left: 0
+        margin-top: 30px    

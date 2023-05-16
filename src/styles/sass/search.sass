@@ -3,7 +3,6 @@
 @import './variables'
 
 
-
 .search__filters
     margin: 80px 0
     
@@ -20,20 +19,22 @@
 
 
 
+
 .form
     position: relative
+   
   
-    input
-        width: 1157px
-        padding-left: 20px
-        padding-top: 15px
-        padding-bottom: 15px
-        @include font( 'SFProDisplay' ,16px, 400, none, left, #656464)
-        background-color: #F0F0F4
-        border: none
-        border-radius: 3px
+.form input
+    width: 1157px
+    padding-left: 20px
+    padding-top: 15px
+    padding-bottom: 15px
+    @include font( 'SFProDisplay' ,16px, 400, none, left, #656464)
+    background-color: #F0F0F4
+    border: none
+    border-radius: 3px
     
-    button
+.form button
         position: absolute
         right: -5px
         top: 0   
@@ -44,10 +45,27 @@
         padding: 17px 38px 16px 40px
         border-radius: 3px
 
-      
- 
 
-@media (max-width: 576px)
+@media (max-width: 800px)
     .navigation__items-filters
         white-space: nowrap
+        overflow: height
+    .form
+        margin: 0     
+    .form input
+        width: 300px
+        padding-left: 20px
+        padding-top: 15px
+        padding-bottom: 15px  
+       
+    .form button
+        display: none
+      
+
+
+
+
+
+
+ 
 
