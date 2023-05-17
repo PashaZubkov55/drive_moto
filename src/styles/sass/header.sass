@@ -24,6 +24,8 @@
     
 .header__logo 
     flex-direction: column
+.logo_image
+    display: block    
    
 .logo__text
       @include font( 'Staatliches',20px, 400,  uppercase , center, $header_top_color )   
@@ -34,6 +36,7 @@
 .header__lacation
       @include font( 'SFProDisplay' ,20px,  700, lowercase, center, $header_top_color )
       @include displayElements( flex, flex-start , center,)
+      
   
 .location 
     position: relative
@@ -99,9 +102,75 @@
     padding-bottom: 14px
     border-bottom: 3px solid #1C62CD
 
+.header__icon
+    display: none
 
 .menu__items-products
     @include displayElements( flex, flex-start , center,)
+.navigation
+    display: block    
+.navigation_mobile
+     display: none  
+
+#burger
+        display: none
+@media (max-width:1192px)
+    .header__top
+        text-align: left
+    .logo_image
+        display: none
+    .header__lacation
+        display: none
+    .navigation
+        display: none    
+    .navigation_mobile
+        display: none
+    #burgerClose + label + .navigation_mobile
+        display: none
+    #burger:checked + label + .navigation_mobile
+        display: flex
+
+
+    .menu__link
+        margin-left: 15px
+   
+    .header__icon
+        display: block
+        &:hover
+            cursor: pointer
+
+    .navigation__item
+        margin: 10px 0
+        position: relative
+        
+    .navigation__item
+         &::before
+            position: absolute
+            content: ' '
+            width: 600px
+            bottom: 0
+            border: 1px solid #EEE
+            left: -100px
+           
+    .navigation__item a
+       margin-left: 23px
+       color: #2F3035
+    .navigation__items_mobile
+        display: flex
+        justify-content: flex-start
+        align-items: baseline 
+        position: fixed
+        width: 100%
+        height: 100%
+        z-index: 5
+        background-color: #fff
+        top: 0
+        left: 0
+
+        flex-direction: column
+
+    .navigation__item_margin
+        margin:  10px 20px
     
 
 @media (max-width: 756px) 
