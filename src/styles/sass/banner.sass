@@ -20,3 +20,34 @@
     line-height: 50px
     padding: 0 41px
     margin-left: 50px
+.main__banner
+    display: flex
+.main__banner_mobile
+    display: none  
+@media  (max-width: 1192px)
+    .main__banner
+        display: none
+    .main__banner_mobile
+        flex-direction: column
+        display: flex
+    .bunner__description
+         @include font( 'SFProDisplay' ,18px, 700, uppercase, center, #fff )
+         line-height: 18px
+    .bunner__button
+        .main__button
+
+            background-color: #fff
+            @include font( 'SFProDisplay' ,14px, 500, uppercase, right, #2F3035 )
+            line-height: 50px
+            padding: 0 41px
+            margin-left: 0   
+            white-space: nowrap
+
+    .bunner__botom
+        display: flex
+        align-items: center
+    .bunner__image img
+        width: 70px
+        height: 70px
+    .bunner__image_quadro
+        margin-left: 30px    
